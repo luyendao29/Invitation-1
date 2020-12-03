@@ -3,18 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CE4029A625787B820043EE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029A525787B820043EE29 /* AppDelegate.swift */; };
 		CE4029A825787B820043EE29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029A725787B820043EE29 /* SceneDelegate.swift */; };
-		CE4029AA25787B820043EE29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029A925787B820043EE29 /* ViewController.swift */; };
 		CE4029AD25787B820043EE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4029AB25787B820043EE29 /* Main.storyboard */; };
 		CE4029AF25787B830043EE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4029AE25787B830043EE29 /* Assets.xcassets */; };
 		CE4029B225787B830043EE29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4029B025787B830043EE29 /* LaunchScreen.storyboard */; };
 		CE4029BD25787B830043EE29 /* InvitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029BC25787B830043EE29 /* InvitationTests.swift */; };
 		CE4029C825787B830043EE29 /* InvitationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029C725787B830043EE29 /* InvitationUITests.swift */; };
+		CE4029D625787D860043EE29 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029D525787D860043EE29 /* Storyboard.swift */; };
+		CE4029E525787DAC0043EE29 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4029DA25787DAC0043EE29 /* DropDownCell.xib */; };
+		CE4029E625787DAC0043EE29 /* InfoDropDown.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE4029DB25787DAC0043EE29 /* InfoDropDown.plist */; };
+		CE4029E725787DAC0043EE29 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029DD25787DAC0043EE29 /* DPDKeyboardListener.swift */; };
+		CE4029E825787DAC0043EE29 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029DE25787DAC0043EE29 /* DPDConstants.swift */; };
+		CE4029E925787DAC0043EE29 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029DF25787DAC0043EE29 /* DPDUIView+Extension.swift */; };
+		CE4029EA25787DAC0043EE29 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029E125787DAC0043EE29 /* DropDown.swift */; };
+		CE4029EB25787DAC0043EE29 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029E225787DAC0043EE29 /* DropDownCell.swift */; };
+		CE4029EC25787DAC0043EE29 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029E325787DAC0043EE29 /* DropDown+Appearance.swift */; };
+		CE4029ED25787DAC0043EE29 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029E425787DAC0043EE29 /* TableView.swift */; };
+		CE4029F225787DD20043EE29 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029EF25787DD20043EE29 /* UIView.swift */; };
+		CE4029F325787DD20043EE29 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029F025787DD20043EE29 /* Results.swift */; };
+		CE4029F425787DD20043EE29 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029F125787DD20043EE29 /* String.swift */; };
+		CE4029FD25787DF90043EE29 /* BaseAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4029F625787DF90043EE29 /* BaseAlert.storyboard */; };
+		CE4029FE25787DF90043EE29 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029F725787DF90043EE29 /* BaseViewController.swift */; };
+		CE4029FF25787DF90043EE29 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029F825787DF90043EE29 /* BaseTableViewCell.swift */; };
+		CE402A0025787DF90043EE29 /* ShowAlertWithConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029F925787DF90043EE29 /* ShowAlertWithConfirm.swift */; };
+		CE402A0125787DF90043EE29 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029FA25787DF90043EE29 /* AlertService.swift */; };
+		CE402A0225787DF90043EE29 /* ShowAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029FB25787DF90043EE29 /* ShowAlertVC.swift */; };
+		CE402A0325787DF90043EE29 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029FC25787DF90043EE29 /* BaseNavigationController.swift */; };
+		CE402A0825787E110043EE29 /* KhachMoiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE402A0625787E110043EE29 /* KhachMoiCell.xib */; };
+		CE402A0925787E110043EE29 /* KhachMoiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A0725787E110043EE29 /* KhachMoiCell.swift */; };
+		CE402A0C25787E2C0043EE29 /* ThongTinKhachMoiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A0B25787E2C0043EE29 /* ThongTinKhachMoiModel.swift */; };
+		CE402A1225787E480043EE29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A0E25787E480043EE29 /* ViewController.swift */; };
+		CE402A1325787E480043EE29 /* ChonDiaDiemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A0F25787E480043EE29 /* ChonDiaDiemVC.swift */; };
+		CE402A1425787E480043EE29 /* ChiTietKhachMoiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A1025787E480043EE29 /* ChiTietKhachMoiVC.swift */; };
+		CE402A1525787E480043EE29 /* ThemKhachMoiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A1125787E480043EE29 /* ThemKhachMoiVC.swift */; };
+		CE402A1725788A770043EE29 /* PhonebookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A1625788A770043EE29 /* PhonebookVC.swift */; };
+		CE402A1925788CB20043EE29 /* FetchedContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A1825788CB20043EE29 /* FetchedContactModel.swift */; };
+		CE402A1D25788DDF0043EE29 /* ChoseContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A1B25788DDF0043EE29 /* ChoseContactCell.swift */; };
+		CE402A1E25788DDF0043EE29 /* ChoseContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE402A1C25788DDF0043EE29 /* ChoseContactCell.xib */; };
+		CE402A212578B3DD0043EE29 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A202578B3DD0043EE29 /* Constant.swift */; };
+		CE402A232578B4360043EE29 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A222578B4360043EE29 /* Preferences.swift */; };
+		CE402A252578B46E0043EE29 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A242578B46E0043EE29 /* TextView.swift */; };
+		CE402A272578B65F0043EE29 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A262578B65F0043EE29 /* Int.swift */; };
+		D0A4C56B15F028CA33281A68 /* Pods_Invitation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7236BD14B286FA56613E484 /* Pods_Invitation.framework */; };
+		D4588CD64A4D6E0D533602B3 /* Pods_Invitation_InvitationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81667D43A2D4B2698202D8AA /* Pods_Invitation_InvitationUITests.framework */; };
+		F4611A24B7506161DF1AA1CF /* Pods_InvitationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9359A2A07DA175129B80DE87 /* Pods_InvitationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +72,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225709245371889A2449D9B4 /* Pods-InvitationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvitationTests.debug.xcconfig"; path = "Target Support Files/Pods-InvitationTests/Pods-InvitationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D9C88EB790FEDC68CE4D74C /* Pods-Invitation-InvitationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation-InvitationUITests.debug.xcconfig"; path = "Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4249537C8C2D1F84F1E037ED /* Pods-InvitationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvitationTests.release.xcconfig"; path = "Target Support Files/Pods-InvitationTests/Pods-InvitationTests.release.xcconfig"; sourceTree = "<group>"; };
+		81667D43A2D4B2698202D8AA /* Pods_Invitation_InvitationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Invitation_InvitationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9359A2A07DA175129B80DE87 /* Pods_InvitationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvitationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5076EE3B53E2EB4FC78B37A /* Pods-Invitation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation.release.xcconfig"; path = "Target Support Files/Pods-Invitation/Pods-Invitation.release.xcconfig"; sourceTree = "<group>"; };
+		A8F9F5F7930A42E2093C3EE3 /* Pods-Invitation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation.debug.xcconfig"; path = "Target Support Files/Pods-Invitation/Pods-Invitation.debug.xcconfig"; sourceTree = "<group>"; };
+		B818F312760B8E2713C0922F /* Pods-Invitation-InvitationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation-InvitationUITests.release.xcconfig"; path = "Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE4029A225787B820043EE29 /* Invitation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Invitation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4029A525787B820043EE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4029A725787B820043EE29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE4029A925787B820043EE29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE4029AC25787B820043EE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE4029AE25787B830043EE29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4029B125787B830043EE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +93,43 @@
 		CE4029C325787B830043EE29 /* InvitationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvitationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4029C725787B830043EE29 /* InvitationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationUITests.swift; sourceTree = "<group>"; };
 		CE4029C925787B830043EE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4029D525787D860043EE29 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		CE4029D825787DAC0043EE29 /* DropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDown.h; sourceTree = "<group>"; };
+		CE4029DA25787DAC0043EE29 /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		CE4029DB25787DAC0043EE29 /* InfoDropDown.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoDropDown.plist; sourceTree = "<group>"; };
+		CE4029DD25787DAC0043EE29 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		CE4029DE25787DAC0043EE29 /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
+		CE4029DF25787DAC0043EE29 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		CE4029E125787DAC0043EE29 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		CE4029E225787DAC0043EE29 /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
+		CE4029E325787DAC0043EE29 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		CE4029E425787DAC0043EE29 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		CE4029EF25787DD20043EE29 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CE4029F025787DD20043EE29 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		CE4029F125787DD20043EE29 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CE4029F625787DF90043EE29 /* BaseAlert.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BaseAlert.storyboard; sourceTree = "<group>"; };
+		CE4029F725787DF90043EE29 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE4029F825787DF90043EE29 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		CE4029F925787DF90043EE29 /* ShowAlertWithConfirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAlertWithConfirm.swift; sourceTree = "<group>"; };
+		CE4029FA25787DF90043EE29 /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		CE4029FB25787DF90043EE29 /* ShowAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAlertVC.swift; sourceTree = "<group>"; };
+		CE4029FC25787DF90043EE29 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		CE402A0625787E110043EE29 /* KhachMoiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KhachMoiCell.xib; sourceTree = "<group>"; };
+		CE402A0725787E110043EE29 /* KhachMoiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhachMoiCell.swift; sourceTree = "<group>"; };
+		CE402A0B25787E2C0043EE29 /* ThongTinKhachMoiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThongTinKhachMoiModel.swift; sourceTree = "<group>"; };
+		CE402A0E25787E480043EE29 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE402A0F25787E480043EE29 /* ChonDiaDiemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChonDiaDiemVC.swift; sourceTree = "<group>"; };
+		CE402A1025787E480043EE29 /* ChiTietKhachMoiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChiTietKhachMoiVC.swift; sourceTree = "<group>"; };
+		CE402A1125787E480043EE29 /* ThemKhachMoiVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemKhachMoiVC.swift; sourceTree = "<group>"; };
+		CE402A1625788A770043EE29 /* PhonebookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonebookVC.swift; sourceTree = "<group>"; };
+		CE402A1825788CB20043EE29 /* FetchedContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedContactModel.swift; sourceTree = "<group>"; };
+		CE402A1B25788DDF0043EE29 /* ChoseContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseContactCell.swift; sourceTree = "<group>"; };
+		CE402A1C25788DDF0043EE29 /* ChoseContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoseContactCell.xib; sourceTree = "<group>"; };
+		CE402A202578B3DD0043EE29 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CE402A222578B4360043EE29 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		CE402A242578B46E0043EE29 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		CE402A262578B65F0043EE29 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		D7236BD14B286FA56613E484 /* Pods_Invitation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Invitation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A4C56B15F028CA33281A68 /* Pods_Invitation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4611A24B7506161DF1AA1CF /* Pods_InvitationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +153,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4588CD64A4D6E0D533602B3 /* Pods_Invitation_InvitationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F6C6D1F96D247175DBFC183 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7236BD14B286FA56613E484 /* Pods_Invitation.framework */,
+				81667D43A2D4B2698202D8AA /* Pods_Invitation_InvitationUITests.framework */,
+				9359A2A07DA175129B80DE87 /* Pods_InvitationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4A0DA0B604CC5790705EA45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8F9F5F7930A42E2093C3EE3 /* Pods-Invitation.debug.xcconfig */,
+				A5076EE3B53E2EB4FC78B37A /* Pods-Invitation.release.xcconfig */,
+				3D9C88EB790FEDC68CE4D74C /* Pods-Invitation-InvitationUITests.debug.xcconfig */,
+				B818F312760B8E2713C0922F /* Pods-Invitation-InvitationUITests.release.xcconfig */,
+				225709245371889A2449D9B4 /* Pods-InvitationTests.debug.xcconfig */,
+				4249537C8C2D1F84F1E037ED /* Pods-InvitationTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE40299925787B820043EE29 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +190,8 @@
 				CE4029BB25787B830043EE29 /* InvitationTests */,
 				CE4029C625787B830043EE29 /* InvitationUITests */,
 				CE4029A325787B820043EE29 /* Products */,
+				B4A0DA0B604CC5790705EA45 /* Pods */,
+				3F6C6D1F96D247175DBFC183 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +210,14 @@
 			children = (
 				CE4029A525787B820043EE29 /* AppDelegate.swift */,
 				CE4029A725787B820043EE29 /* SceneDelegate.swift */,
-				CE4029A925787B820043EE29 /* ViewController.swift */,
+				CE402A1F2578B3CD0043EE29 /* Application */,
+				CE402A0D25787E480043EE29 /* Controller */,
+				CE402A0A25787E2C0043EE29 /* Model */,
+				CE402A0425787E110043EE29 /* View */,
+				CE4029F525787DF90043EE29 /* Base */,
+				CE4029D725787DAC0043EE29 /* DropDown */,
 				CE4029AB25787B820043EE29 /* Main.storyboard */,
+				CE4029EE25787DD20043EE29 /* Extension */,
 				CE4029AE25787B830043EE29 /* Assets.xcassets */,
 				CE4029B025787B830043EE29 /* LaunchScreen.storyboard */,
 				CE4029B325787B830043EE29 /* Info.plist */,
@@ -128,6 +243,131 @@
 			path = InvitationUITests;
 			sourceTree = "<group>";
 		};
+		CE4029D725787DAC0043EE29 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				CE4029D825787DAC0043EE29 /* DropDown.h */,
+				CE4029D925787DAC0043EE29 /* resources */,
+				CE4029DB25787DAC0043EE29 /* InfoDropDown.plist */,
+				CE4029DC25787DAC0043EE29 /* helpers */,
+				CE4029E025787DAC0043EE29 /* src */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		CE4029D925787DAC0043EE29 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE4029DA25787DAC0043EE29 /* DropDownCell.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		CE4029DC25787DAC0043EE29 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE4029DD25787DAC0043EE29 /* DPDKeyboardListener.swift */,
+				CE4029DE25787DAC0043EE29 /* DPDConstants.swift */,
+				CE4029DF25787DAC0043EE29 /* DPDUIView+Extension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		CE4029E025787DAC0043EE29 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CE4029E125787DAC0043EE29 /* DropDown.swift */,
+				CE4029E225787DAC0043EE29 /* DropDownCell.swift */,
+				CE4029E325787DAC0043EE29 /* DropDown+Appearance.swift */,
+				CE4029E425787DAC0043EE29 /* TableView.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		CE4029EE25787DD20043EE29 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE4029EF25787DD20043EE29 /* UIView.swift */,
+				CE4029F025787DD20043EE29 /* Results.swift */,
+				CE4029F125787DD20043EE29 /* String.swift */,
+				CE402A242578B46E0043EE29 /* TextView.swift */,
+				CE402A262578B65F0043EE29 /* Int.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE4029F525787DF90043EE29 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE4029F625787DF90043EE29 /* BaseAlert.storyboard */,
+				CE4029F725787DF90043EE29 /* BaseViewController.swift */,
+				CE4029F825787DF90043EE29 /* BaseTableViewCell.swift */,
+				CE4029F925787DF90043EE29 /* ShowAlertWithConfirm.swift */,
+				CE4029FA25787DF90043EE29 /* AlertService.swift */,
+				CE4029FB25787DF90043EE29 /* ShowAlertVC.swift */,
+				CE4029FC25787DF90043EE29 /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE402A0425787E110043EE29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE402A1A25788DC70043EE29 /* ChoseContactCell */,
+				CE402A0525787E110043EE29 /* KhachMoiCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE402A0525787E110043EE29 /* KhachMoiCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE402A0625787E110043EE29 /* KhachMoiCell.xib */,
+				CE402A0725787E110043EE29 /* KhachMoiCell.swift */,
+			);
+			path = KhachMoiCell;
+			sourceTree = "<group>";
+		};
+		CE402A0A25787E2C0043EE29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE402A0B25787E2C0043EE29 /* ThongTinKhachMoiModel.swift */,
+				CE402A1825788CB20043EE29 /* FetchedContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE402A0D25787E480043EE29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE402A0E25787E480043EE29 /* ViewController.swift */,
+				CE402A0F25787E480043EE29 /* ChonDiaDiemVC.swift */,
+				CE402A1025787E480043EE29 /* ChiTietKhachMoiVC.swift */,
+				CE402A1125787E480043EE29 /* ThemKhachMoiVC.swift */,
+				CE402A1625788A770043EE29 /* PhonebookVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE402A1A25788DC70043EE29 /* ChoseContactCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE402A1B25788DDF0043EE29 /* ChoseContactCell.swift */,
+				CE402A1C25788DDF0043EE29 /* ChoseContactCell.xib */,
+			);
+			path = ChoseContactCell;
+			sourceTree = "<group>";
+		};
+		CE402A1F2578B3CD0043EE29 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE4029D525787D860043EE29 /* Storyboard.swift */,
+				CE402A202578B3DD0043EE29 /* Constant.swift */,
+				CE402A222578B4360043EE29 /* Preferences.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +375,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4029CC25787B830043EE29 /* Build configuration list for PBXNativeTarget "Invitation" */;
 			buildPhases = (
+				4F95A25508C164E198237609 /* [CP] Check Pods Manifest.lock */,
 				CE40299E25787B820043EE29 /* Sources */,
 				CE40299F25787B820043EE29 /* Frameworks */,
 				CE4029A025787B820043EE29 /* Resources */,
+				7C90580286850B9058B961A2 /* [CP] Embed Pods Frameworks */,
+				27AACA97736B5ECDBA37F432 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +395,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4029CF25787B830043EE29 /* Build configuration list for PBXNativeTarget "InvitationTests" */;
 			buildPhases = (
+				E0155BEFE4F0886660F68C9F /* [CP] Check Pods Manifest.lock */,
 				CE4029B425787B830043EE29 /* Sources */,
 				CE4029B525787B830043EE29 /* Frameworks */,
 				CE4029B625787B830043EE29 /* Resources */,
@@ -170,9 +414,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE4029D225787B830043EE29 /* Build configuration list for PBXNativeTarget "InvitationUITests" */;
 			buildPhases = (
+				7D1D9C12CA4064E80B6CBC17 /* [CP] Check Pods Manifest.lock */,
 				CE4029BF25787B830043EE29 /* Sources */,
 				CE4029C025787B830043EE29 /* Frameworks */,
 				CE4029C125787B830043EE29 /* Resources */,
+				F4BC98747013D1F410DF1265 /* [CP] Embed Pods Frameworks */,
+				CDFE937E93DA997994F1D8E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,8 +479,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4029FD25787DF90043EE29 /* BaseAlert.storyboard in Resources */,
 				CE4029B225787B830043EE29 /* LaunchScreen.storyboard in Resources */,
 				CE4029AF25787B830043EE29 /* Assets.xcassets in Resources */,
+				CE402A1E25788DDF0043EE29 /* ChoseContactCell.xib in Resources */,
+				CE4029E625787DAC0043EE29 /* InfoDropDown.plist in Resources */,
+				CE402A0825787E110043EE29 /* KhachMoiCell.xib in Resources */,
+				CE4029E525787DAC0043EE29 /* DropDownCell.xib in Resources */,
 				CE4029AD25787B820043EE29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +506,180 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27AACA97736B5ECDBA37F432 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Invitation/Pods-Invitation-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Invitation/Pods-Invitation-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Invitation/Pods-Invitation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F95A25508C164E198237609 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Invitation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C90580286850B9058B961A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Invitation/Pods-Invitation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Invitation/Pods-Invitation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Invitation/Pods-Invitation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D1D9C12CA4064E80B6CBC17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Invitation-InvitationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDFE937E93DA997994F1D8E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0155BEFE4F0886660F68C9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvitationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4BC98747013D1F410DF1265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE40299E25787B820043EE29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4029AA25787B820043EE29 /* ViewController.swift in Sources */,
 				CE4029A625787B820043EE29 /* AppDelegate.swift in Sources */,
+				CE402A0925787E110043EE29 /* KhachMoiCell.swift in Sources */,
+				CE402A232578B4360043EE29 /* Preferences.swift in Sources */,
+				CE4029F425787DD20043EE29 /* String.swift in Sources */,
+				CE4029ED25787DAC0043EE29 /* TableView.swift in Sources */,
+				CE402A1225787E480043EE29 /* ViewController.swift in Sources */,
+				CE4029F225787DD20043EE29 /* UIView.swift in Sources */,
+				CE402A0C25787E2C0043EE29 /* ThongTinKhachMoiModel.swift in Sources */,
+				CE4029D625787D860043EE29 /* Storyboard.swift in Sources */,
+				CE4029FE25787DF90043EE29 /* BaseViewController.swift in Sources */,
+				CE402A0325787DF90043EE29 /* BaseNavigationController.swift in Sources */,
+				CE402A252578B46E0043EE29 /* TextView.swift in Sources */,
+				CE402A212578B3DD0043EE29 /* Constant.swift in Sources */,
+				CE402A0225787DF90043EE29 /* ShowAlertVC.swift in Sources */,
+				CE4029EB25787DAC0043EE29 /* DropDownCell.swift in Sources */,
+				CE402A272578B65F0043EE29 /* Int.swift in Sources */,
+				CE402A1525787E480043EE29 /* ThemKhachMoiVC.swift in Sources */,
 				CE4029A825787B820043EE29 /* SceneDelegate.swift in Sources */,
+				CE402A1725788A770043EE29 /* PhonebookVC.swift in Sources */,
+				CE402A0025787DF90043EE29 /* ShowAlertWithConfirm.swift in Sources */,
+				CE4029F325787DD20043EE29 /* Results.swift in Sources */,
+				CE4029E925787DAC0043EE29 /* DPDUIView+Extension.swift in Sources */,
+				CE4029E825787DAC0043EE29 /* DPDConstants.swift in Sources */,
+				CE402A1425787E480043EE29 /* ChiTietKhachMoiVC.swift in Sources */,
+				CE4029EA25787DAC0043EE29 /* DropDown.swift in Sources */,
+				CE402A0125787DF90043EE29 /* AlertService.swift in Sources */,
+				CE402A1325787E480043EE29 /* ChonDiaDiemVC.swift in Sources */,
+				CE402A1D25788DDF0043EE29 /* ChoseContactCell.swift in Sources */,
+				CE4029E725787DAC0043EE29 /* DPDKeyboardListener.swift in Sources */,
+				CE4029FF25787DF90043EE29 /* BaseTableViewCell.swift in Sources */,
+				CE402A1925788CB20043EE29 /* FetchedContactModel.swift in Sources */,
+				CE4029EC25787DAC0043EE29 /* DropDown+Appearance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +850,13 @@
 		};
 		CE4029CD25787B830043EE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8F9F5F7930A42E2093C3EE3 /* Pods-Invitation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S36XF6BCMY;
+				DEVELOPMENT_TEAM = R545ZGZS5K;
 				INFOPLIST_FILE = Invitation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +870,13 @@
 		};
 		CE4029CE25787B830043EE29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5076EE3B53E2EB4FC78B37A /* Pods-Invitation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S36XF6BCMY;
+				DEVELOPMENT_TEAM = R545ZGZS5K;
 				INFOPLIST_FILE = Invitation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +890,7 @@
 		};
 		CE4029D025787B830043EE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 225709245371889A2449D9B4 /* Pods-InvitationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +913,7 @@
 		};
 		CE4029D125787B830043EE29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4249537C8C2D1F84F1E037ED /* Pods-InvitationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +936,7 @@
 		};
 		CE4029D325787B830043EE29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9C88EB790FEDC68CE4D74C /* Pods-Invitation-InvitationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +957,7 @@
 		};
 		CE4029D425787B830043EE29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B818F312760B8E2713C0922F /* Pods-Invitation-InvitationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
