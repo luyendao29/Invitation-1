@@ -20,12 +20,28 @@ class ChiTietKhachMoiVC: BaseViewController, UITextViewDelegate {
     @IBOutlet weak var latitudeTextView: UITextView!
     @IBOutlet weak var switchStatus: UISwitch!
     
+    @IBOutlet weak var titleNoteTextView: UITextView!
+    @IBOutlet weak var noteTextView: UITextView!
+    
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var updateButton: UIButton!
     
     fileprivate let application = UIApplication.shared
     var detailKhach = ThongTinKhachMoiModel()
     var closureUpdate: ((ThongTinKhachMoiModel) -> ())?
+    
+    var relationLabel = UILabel()
+    var nameLabel = UILabel()
+    var ageLabel = UILabel()
+    var phoneLabel = UILabel()
+    var addressLabel = UILabel()
+    var noteLabel = UILabel()
+    
+    var scrollKeybard: CGFloat = 0 {
+        didSet {
+            self.view.frame.origin.y = scrollKeybard
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +52,29 @@ class ChiTietKhachMoiVC: BaseViewController, UITextViewDelegate {
         
         setShadowButton(button: cancelButton)
         setShadowButton(button: updateButton)
+        
+        setPlaceholder(textView: quanHeTextView, label: relationLabel, text: "Quan hệ")
+        setPlaceholder(textView: tenTextView, label: nameLabel, text: "Tên khách mời")
+        setPlaceholder(textView: tuoiTextView, label: ageLabel, text: "Tuổi")
+        setPlaceholder(textView: phoneTextView, label: phoneLabel, text: "Số điện thoại")
+        setPlaceholder(textView: diaChiTextView, label: addressLabel, text: "Địa chỉ")
+        setPlaceholder(textView: noteTextView, label: noteLabel, text: "Nhập ghi chú (không bắt buộc)")
+        switchStatus.set(width: 45, height: 25)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        title = "Chi tiết khách mời"
+    }
+    
+    func setPlaceholder(textView: UITextView, label: UILabel, text: String) {
+        label.text = text
+        label.font = UIFont.italicSystemFont(ofSize: (textView.font?.pointSize)!)
+        label.sizeToFit()
+        textView.addSubview(label)
+        label.frame.origin = CGPoint(x: 5, y: (textView.font?.pointSize)! / 2)
+        label.textColor = UIColor.lightGray
+        label.isHidden = !textView.text.isEmpty
     }
     
     func setShadowButton(button: UIButton) {
@@ -54,16 +93,19 @@ class ChiTietKhachMoiVC: BaseViewController, UITextViewDelegate {
         phoneTextView.delegate = self
         longitudeTextView.delegate = self
         latitudeTextView.delegate = self
+        noteTextView.delegate = self
     }
     
     func fillData() {
         quanHeTextView.text = detailKhach.quan_he
         tenTextView.text = detailKhach.ten
         tuoiTextView.text = detailKhach.tuoi
-        phoneTextView.text = "\(detailKhach.phone)"
+        phoneTextView.text = detailKhach.phone.toString()
         diaChiTextView.text = detailKhach.dia_chi
         longitudeTextView.text = "\(detailKhach.longitude)"
         latitudeTextView.text = "\(detailKhach.latitude)"
+        switchStatus.isOn = detailKhach.status
+        noteTextView.text = detailKhach.note
     }
     
     func editKhachMoi() -> ThongTinKhachMoiModel {
@@ -82,6 +124,7 @@ class ChiTietKhachMoiVC: BaseViewController, UITextViewDelegate {
             newInfo.phone = phone
         }
         newInfo.status = switchStatus.isOn
+        newInfo.note = noteTextView.text
         
         return newInfo
     }
@@ -130,11 +173,47 @@ class ChiTietKhachMoiVC: BaseViewController, UITextViewDelegate {
     }
     
     //MARK: Delegate TextView
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView == noteTextView {
+            scrollKeybard = -200
+        }
+    }
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
             textView.resignFirstResponder()
         }
+        switch textView {
+        case tuoiTextView:
+            return tuoiTextView.text.count + (text.count - range.length) <= 2
+        case phoneTextView:
+            return phoneTextView.text.count + (text.count - range.length) <= 14
+        default:
+            break
+        }
         return true
+    }
+    
+    func textViewDidChangeSelection(_ textView: UITextView) {
+        switch textView {
+        case quanHeTextView:
+            relationLabel.isHidden = !quanHeTextView.text.isEmpty
+        case tenTextView:
+            nameLabel.isHidden = !tenTextView.text.isEmpty
+        case tuoiTextView:
+            ageLabel.isHidden = !tuoiTextView.text.isEmpty
+        case phoneTextView:
+            phoneLabel.isHidden = !phoneTextView.text.isEmpty
+        case diaChiTextView:
+            addressLabel.isHidden = !diaChiTextView.text.isEmpty
+        case noteTextView:
+             noteLabel.isHidden = !noteTextView.text.isEmpty
+        default:
+            break
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        scrollKeybard = 0
     }
     
 }

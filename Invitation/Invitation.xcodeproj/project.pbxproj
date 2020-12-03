@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE22A4E82578D47F000DB278 /* UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22A4E72578D47F000DB278 /* UISwitch.swift */; };
 		CE4029A625787B820043EE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029A525787B820043EE29 /* AppDelegate.swift */; };
 		CE4029A825787B820043EE29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4029A725787B820043EE29 /* SceneDelegate.swift */; };
 		CE4029AD25787B820043EE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4029AB25787B820043EE29 /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		A5076EE3B53E2EB4FC78B37A /* Pods-Invitation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation.release.xcconfig"; path = "Target Support Files/Pods-Invitation/Pods-Invitation.release.xcconfig"; sourceTree = "<group>"; };
 		A8F9F5F7930A42E2093C3EE3 /* Pods-Invitation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation.debug.xcconfig"; path = "Target Support Files/Pods-Invitation/Pods-Invitation.debug.xcconfig"; sourceTree = "<group>"; };
 		B818F312760B8E2713C0922F /* Pods-Invitation-InvitationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation-InvitationUITests.release.xcconfig"; path = "Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE22A4E72578D47F000DB278 /* UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitch.swift; sourceTree = "<group>"; };
 		CE4029A225787B820043EE29 /* Invitation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Invitation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4029A525787B820043EE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4029A725787B820043EE29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				CE4029EF25787DD20043EE29 /* UIView.swift */,
+				CE22A4E72578D47F000DB278 /* UISwitch.swift */,
 				CE4029F025787DD20043EE29 /* Results.swift */,
 				CE4029F125787DD20043EE29 /* String.swift */,
 				CE402A242578B46E0043EE29 /* TextView.swift */,
@@ -669,6 +672,7 @@
 				CE402A1725788A770043EE29 /* PhonebookVC.swift in Sources */,
 				CE402A0025787DF90043EE29 /* ShowAlertWithConfirm.swift in Sources */,
 				CE4029F325787DD20043EE29 /* Results.swift in Sources */,
+				CE22A4E82578D47F000DB278 /* UISwitch.swift in Sources */,
 				CE4029E925787DAC0043EE29 /* DPDUIView+Extension.swift in Sources */,
 				CE4029E825787DAC0043EE29 /* DPDConstants.swift in Sources */,
 				CE402A1425787E480043EE29 /* ChiTietKhachMoiVC.swift in Sources */,

@@ -206,14 +206,12 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Bác" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rhh-Ml-2uU">
                                 <rect key="frame" x="8" y="52" width="398" height="33"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Nguyễn Văn Tài" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sYw-Tb-a2Q">
                                 <rect key="frame" x="8" y="93" width="276" height="33"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -221,32 +219,28 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K0r-4r-63R">
                                 <rect key="frame" x="323" y="93" width="83" height="33"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Tuổi" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aZP-BM-DcX">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="Tuổi" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aZP-BM-DcX">
                                         <rect key="frame" x="0.0" y="0.0" width="37.5" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="99" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-c9-OV3">
                                         <rect key="frame" x="45.5" y="0.0" width="37.5" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad"/>
                                     </textView>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Địa chỉ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AMR-eh-n4Z">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="Địa chỉ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AMR-eh-n4Z">
                                 <rect key="frame" x="8" y="216" width="54" height="33"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pD9-pz-u7Y">
                                 <rect key="frame" x="8" y="257" width="398" height="33"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -254,16 +248,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zv6-nF-yMR">
                                 <rect key="frame" x="8" y="298" width="59" height="74"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Kinh độ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Be-Br-Rh9">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="Kinh độ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Be-Br-Rh9">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Vĩ độ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aK3-if-fDR">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="Vĩ độ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aK3-if-fDR">
                                         <rect key="frame" x="0.0" y="41" width="59" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -275,23 +267,20 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jMo-Ds-gjd">
                                         <rect key="frame" x="0.0" y="0.0" width="248.5" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fs9-P5-zKF">
                                         <rect key="frame" x="0.0" y="41" width="248.5" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad"/>
                                     </textView>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Trạng thái mời" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s4x-ys-hde">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="Trạng thái mời" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s4x-ys-hde">
                                 <rect key="frame" x="8" y="380" width="102.5" height="33"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -335,7 +324,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="09898989" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w24-Ks-4qO">
-                                <rect key="frame" x="8" y="175" width="80.5" height="33"/>
+                                <rect key="frame" x="8" y="175" width="326" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -363,9 +352,26 @@
                                     <action selector="tapSelectMap:" destination="feT-oe-tJK" eventType="touchUpInside" id="4FR-rB-fMe"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="Ghi chú" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kej-eX-7Tl">
+                                <rect key="frame" x="8" y="421" width="59.5" height="33"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MBJ-1t-54R">
+                                <rect key="frame" x="8" y="462" width="398" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="120" id="rC3-qP-ZWz"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="MBJ-1t-54R" firstAttribute="leading" secondItem="lDL-Sy-OVQ" secondAttribute="leading" constant="8" id="0FE-e7-TAf"/>
                             <constraint firstItem="lDL-Sy-OVQ" firstAttribute="trailing" secondItem="pD9-pz-u7Y" secondAttribute="trailing" constant="8" id="4RS-DM-I9U"/>
                             <constraint firstItem="AMR-eh-n4Z" firstAttribute="top" secondItem="w24-Ks-4qO" secondAttribute="bottom" constant="8" id="5fT-gh-STr"/>
                             <constraint firstItem="lDL-Sy-OVQ" firstAttribute="trailing" secondItem="7R3-LE-Flz" secondAttribute="trailing" constant="8" id="68v-5O-ex5"/>
@@ -381,10 +387,13 @@
                             <constraint firstItem="sYw-Tb-a2Q" firstAttribute="width" secondItem="gXL-co-FiV" secondAttribute="width" multiplier="2/3" id="QNN-MG-nvb"/>
                             <constraint firstItem="pD9-pz-u7Y" firstAttribute="top" secondItem="AMR-eh-n4Z" secondAttribute="bottom" constant="8" id="WKx-oM-AOs"/>
                             <constraint firstItem="s4x-ys-hde" firstAttribute="top" secondItem="Zv6-nF-yMR" secondAttribute="bottom" constant="8" id="WWI-VT-oil"/>
+                            <constraint firstItem="Kej-eX-7Tl" firstAttribute="top" secondItem="s4x-ys-hde" secondAttribute="bottom" constant="8" id="WeU-2h-EOq"/>
                             <constraint firstItem="lDL-Sy-OVQ" firstAttribute="bottom" secondItem="b4Y-pa-Mt3" secondAttribute="bottom" constant="8" id="Wew-yU-Slf"/>
                             <constraint firstItem="nBh-Fg-aSC" firstAttribute="centerY" secondItem="s4x-ys-hde" secondAttribute="centerY" id="WiL-An-rXH"/>
+                            <constraint firstItem="Kej-eX-7Tl" firstAttribute="leading" secondItem="lDL-Sy-OVQ" secondAttribute="leading" constant="8" id="cuC-S3-q9o"/>
                             <constraint firstItem="7R3-LE-Flz" firstAttribute="centerY" secondItem="Zv6-nF-yMR" secondAttribute="centerY" id="dxR-6j-Jqz"/>
                             <constraint firstItem="lDL-Sy-OVQ" firstAttribute="trailing" secondItem="j9g-js-4GN" secondAttribute="trailing" constant="8" id="e4F-IV-47H"/>
+                            <constraint firstItem="MBJ-1t-54R" firstAttribute="top" secondItem="Kej-eX-7Tl" secondAttribute="bottom" constant="8" id="fIv-hZ-3ph"/>
                             <constraint firstItem="Zv6-nF-yMR" firstAttribute="top" secondItem="pD9-pz-u7Y" secondAttribute="bottom" constant="8" id="fqu-GY-yGV"/>
                             <constraint firstItem="Zv6-nF-yMR" firstAttribute="leading" secondItem="lDL-Sy-OVQ" secondAttribute="leading" constant="8" id="gul-nE-kEn"/>
                             <constraint firstItem="5E7-bI-9ad" firstAttribute="top" secondItem="pD9-pz-u7Y" secondAttribute="bottom" constant="8" id="kgn-kl-u3M"/>
@@ -393,8 +402,11 @@
                             <constraint firstItem="lDL-Sy-OVQ" firstAttribute="trailing" secondItem="b4Y-pa-Mt3" secondAttribute="trailing" constant="8" id="mpd-UP-j7y"/>
                             <constraint firstItem="K0r-4r-63R" firstAttribute="top" secondItem="rhh-Ml-2uU" secondAttribute="bottom" constant="8" id="oNy-XS-YsZ"/>
                             <constraint firstItem="lDL-Sy-OVQ" firstAttribute="trailing" secondItem="K0r-4r-63R" secondAttribute="trailing" constant="8" id="pcA-eR-57P"/>
+                            <constraint firstItem="b4Y-pa-Mt3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MBJ-1t-54R" secondAttribute="bottom" constant="8" id="q8M-YF-IQ3"/>
                             <constraint firstItem="rhh-Ml-2uU" firstAttribute="leading" secondItem="lDL-Sy-OVQ" secondAttribute="leading" constant="8" id="q8s-zd-RO4"/>
                             <constraint firstItem="5E7-bI-9ad" firstAttribute="width" secondItem="gXL-co-FiV" secondAttribute="width" multiplier="0.6" id="qb5-W3-JU7"/>
+                            <constraint firstItem="lDL-Sy-OVQ" firstAttribute="trailing" secondItem="MBJ-1t-54R" secondAttribute="trailing" constant="8" id="sLf-Lg-CHs"/>
+                            <constraint firstItem="j9g-js-4GN" firstAttribute="leading" secondItem="w24-Ks-4qO" secondAttribute="trailing" constant="32" id="sbK-uu-QvF"/>
                             <constraint firstItem="b4Y-pa-Mt3" firstAttribute="leading" secondItem="lDL-Sy-OVQ" secondAttribute="leading" constant="8" id="tVh-rm-2Wr"/>
                             <constraint firstItem="sYw-Tb-a2Q" firstAttribute="leading" secondItem="lDL-Sy-OVQ" secondAttribute="leading" constant="8" id="wi5-mF-J6w"/>
                             <constraint firstItem="sYw-Tb-a2Q" firstAttribute="top" secondItem="rhh-Ml-2uU" secondAttribute="bottom" constant="8" id="xba-Ks-nbY"/>
@@ -407,10 +419,12 @@
                         <outlet property="diaChiTextView" destination="pD9-pz-u7Y" id="IIR-Ms-qe9"/>
                         <outlet property="latitudeTextView" destination="fs9-P5-zKF" id="56A-KX-g0X"/>
                         <outlet property="longitudeTextView" destination="jMo-Ds-gjd" id="I5m-bc-7hW"/>
+                        <outlet property="noteTextView" destination="MBJ-1t-54R" id="tSe-vQ-Zea"/>
                         <outlet property="phoneTextView" destination="w24-Ks-4qO" id="emX-MR-VGh"/>
                         <outlet property="quanHeTextView" destination="rhh-Ml-2uU" id="VrU-ye-VeP"/>
                         <outlet property="switchStatus" destination="nBh-Fg-aSC" id="oES-QH-ntW"/>
                         <outlet property="tenTextView" destination="sYw-Tb-a2Q" id="NUq-qW-XEm"/>
+                        <outlet property="titleNoteTextView" destination="Kej-eX-7Tl" id="peB-EH-Ady"/>
                         <outlet property="tuoiTextView" destination="X3h-c9-OV3" id="Od6-MN-gbC"/>
                         <outlet property="updateButton" destination="2Hr-SF-NPY" id="DEv-ta-DGA"/>
                     </connections>
@@ -428,7 +442,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="QqZ-m4-zoh">
-                                <rect key="frame" x="8" y="52" width="398" height="339"/>
+                                <rect key="frame" x="8" y="52" width="398" height="407"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="Tên khách mời" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bAe-Ww-Ye7">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="33"/>
@@ -495,6 +509,20 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4bY-vV-IY3">
                                         <rect key="frame" x="0.0" y="306" width="398" height="33"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Ghi chú" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="clu-g4-4xc">
+                                        <rect key="frame" x="0.0" y="340" width="398" height="33"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8YZ-iE-N8x">
+                                        <rect key="frame" x="0.0" y="374" width="398" height="33"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -574,11 +602,13 @@
                         <outlet property="cancelButton" destination="VoY-zF-wBu" id="hVj-OK-6Lt"/>
                         <outlet property="chiTietQuanHeTextView" destination="4bY-vV-IY3" id="Lr4-ta-lKy"/>
                         <outlet property="diaChiTextView" destination="fhE-1h-uIB" id="uO5-DV-zWB"/>
+                        <outlet property="noteTextView" destination="8YZ-iE-N8x" id="YVx-r3-FMj"/>
                         <outlet property="phoneTextView" destination="OLS-H2-gYb" id="XYM-fc-MWI"/>
                         <outlet property="quanHeTextView" destination="DdP-uV-3WG" id="C1D-mn-Qs3"/>
                         <outlet property="tenKhachMoiTextView" destination="1RT-Th-ekw" id="T8C-nZ-7Cd"/>
                         <outlet property="titleAddressTextView" destination="JAI-pN-gaa" id="GDs-jL-XsU"/>
                         <outlet property="titleNameInviteeTextView" destination="bAe-Ww-Ye7" id="Vg8-Gr-mR0"/>
+                        <outlet property="titleNoteTextView" destination="8YZ-iE-N8x" id="TH5-am-hYb"/>
                         <outlet property="titlePhoneTextView" destination="LpE-Nf-2Bs" id="ESF-dC-pB5"/>
                         <outlet property="titleRelationTextView" destination="DdP-uV-3WG" id="8hG-dI-5Rp"/>
                         <outlet property="tuoiTextView" destination="nWL-Lc-r7J" id="3yl-At-BHr"/>
@@ -602,10 +632,13 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYi-gg-Jnj">
                                 <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.30213177200000002" green="0.55747121570000002" blue="0.7488151193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Jkz-Dd-E8d"/>
                                 </constraints>
-                                <state key="normal" title="Xong"/>
+                                <state key="normal" title="Xong">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="tapDoneSelect:" destination="jyX-aU-Qgq" eventType="touchUpInside" id="gFB-Rt-al1"/>
                                 </connections>

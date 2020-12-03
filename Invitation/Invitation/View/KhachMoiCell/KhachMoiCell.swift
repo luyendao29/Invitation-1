@@ -10,6 +10,16 @@ import UIKit
 
 class KhachMoiCell: BaseTableViewCell, UITextViewDelegate {
     
+//    @IBOutlet weak var titleNameTextView: UITextView!
+    
+    @IBOutlet weak var titleAgeTextView: UITextView!
+    
+    @IBOutlet weak var titleAddressTV: UITextView!
+    
+    @IBOutlet weak var titlePhoneTV: UITextView!
+    
+    @IBOutlet weak var titleStatusTV: UITextView!
+    
     @IBOutlet weak var tenTextView: UITextView!
     
     @IBOutlet weak var tuoiTextView: UITextView!
@@ -17,8 +27,6 @@ class KhachMoiCell: BaseTableViewCell, UITextViewDelegate {
     @IBOutlet weak var diaChiTextView: UITextView!
     
     @IBOutlet weak var quanHeTextView: UITextView!
-    
-    @IBOutlet weak var ghiChuTextView: UITextView!
     
     @IBOutlet weak var phoneTextView: UITextView!
     
@@ -31,12 +39,23 @@ class KhachMoiCell: BaseTableViewCell, UITextViewDelegate {
         super.awakeFromNib()
         // Initialization code
         phoneTextView.delegate = self
+        setFont()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    func setFont() {
+        quanHeTextView.setDefaultTitleField()
+        titleAgeTextView.setDefaultTitleField()
+        titleAddressTV.setDefaultTitleField()
+        titlePhoneTV.setDefaultTitleField()
+        titleStatusTV.setDefaultTitleField()
+        
+        statusSwitch.set(width: 45, height: 25)
     }
     
     func fillData() {
@@ -46,7 +65,6 @@ class KhachMoiCell: BaseTableViewCell, UITextViewDelegate {
         quanHeTextView.text = infoKhachMoi.quan_he
         
         //fff
-        ghiChuTextView.text = ""
         statusSwitch.isOn = infoKhachMoi.status
         phoneTextView.text = "\(infoKhachMoi.phone)"
     }

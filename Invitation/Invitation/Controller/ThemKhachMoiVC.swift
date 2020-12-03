@@ -16,6 +16,8 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
     @IBOutlet weak var titlePhoneTextView: UITextView!
     @IBOutlet weak var titleRelationTextView: UITextView!
     
+    @IBOutlet weak var titleNoteTextView: UITextView!
+    
     @IBOutlet weak var tenKhachMoiTextView: UITextView!
     
     @IBOutlet weak var tuoiTextView: UITextView!
@@ -24,6 +26,7 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
     
     @IBOutlet weak var quanHeTextView: UITextView!
     @IBOutlet weak var chiTietQuanHeTextView: UITextView!
+    @IBOutlet weak var noteTextView: UITextView!
     
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
@@ -39,8 +42,15 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
     var diaChiLabel: UILabel!
     var dienThoaiLabel: UILabel!
     var quanHeLabel: UILabel!
+    var noteLabel = UILabel()
     
     var dataKM = ThongTinKhachMoiModel()
+    
+    var scrollKeybard: CGFloat = 0 {
+        didSet {
+            self.view.frame.origin.y = scrollKeybard
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +84,7 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
         titlePhoneTextView.setDefaultTitleField()
         titleRelationTextView.setDefaultTitleField()
         quanHeTextView.setDefaultTitleField()
+        titleNoteTextView.setDefaultTitleField()
         
         tenKhachMoiTextView.setDefaultFont()
         tuoiTextView.setDefaultFont()
@@ -89,6 +100,7 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
         quanHeTextView.delegate = self
         chiTietQuanHeTextView.delegate = self
         phoneTextView.delegate = self
+        noteTextView.delegate = self
     }
     
     func setDisplay() {
@@ -104,11 +116,12 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
         dienThoaiLabel = UILabel()
         quanHeLabel = UILabel()
         
-        setPlaceholder(textView: tenKhachMoiTextView, label: tenLabel, text: "Tên khách mời")
-        setPlaceholder(textView: tuoiTextView, label: tuoiLabel, text: "Tuổi khách mời")
-        setPlaceholder(textView: diaChiTextView, label: diaChiLabel, text: "Địa chỉ")
-        setPlaceholder(textView: phoneTextView, label: dienThoaiLabel, text: "Số điện thoại")
+        setPlaceholder(textView: tenKhachMoiTextView, label: tenLabel, text: "Nhập tên khách mời")
+        setPlaceholder(textView: tuoiTextView, label: tuoiLabel, text: "Nhập tuổi khách mời")
+        setPlaceholder(textView: diaChiTextView, label: diaChiLabel, text: "Nhập địa chỉ")
+        setPlaceholder(textView: phoneTextView, label: dienThoaiLabel, text: "Nhập điện thoại")
         setPlaceholder(textView: chiTietQuanHeTextView, label: quanHeLabel, text: "Chi tiết quan hệ")
+        setPlaceholder(textView: noteTextView, label: noteLabel, text: "Nhập ghi chú (không bắt buộc)")
     }
     
     func setPlaceholder(textView: UITextView, label: UILabel, text: String) {
@@ -179,6 +192,10 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
         case quanHeTextView:
             quanHeTextView.resignFirstResponder()
             showRelation()
+        case chiTietQuanHeTextView:
+            scrollKeybard = -100
+        case noteTextView:
+            scrollKeybard = -100
         default:
             break
         }
@@ -211,6 +228,8 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
             quanHeLabel.isHidden = !chiTietQuanHeTextView.text.isEmpty
         case phoneTextView:
             dienThoaiLabel.isHidden = phoneTextView.text != ""
+        case noteTextView:
+            noteLabel.isHidden = !noteTextView.text.isEmpty
         default:
             break
         }
@@ -229,7 +248,19 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
                 textView.resignFirstResponder()
             }
         }
+        switch textView {
+        case tuoiTextView:
+            return tuoiTextView.text.count + (text.count - range.length) <= 2
+        case phoneTextView:
+            return phoneTextView.text.count + (text.count - range.length) <= 14
+        default:
+            break
+        }
         return true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        scrollKeybard = 0
     }
     
     @IBAction func tapGetContact(_ sender: Any) {
@@ -262,7 +293,7 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
         
         newUser.longitude = dataKM.longitude
         newUser.latitude = dataKM.latitude
-        
+        newUser.note = noteTextView.text
         try! realm.write {
             realm.add(newUser)
         }
@@ -286,7 +317,7 @@ class ThemKhachMoiVC: BaseViewController, UITextViewDelegate {
     }
     
     func addObjectToRealm() {
-//        https://stackoverflow.com/questions/58976630/swift-realm-completion-after-successfully-adding-item
+        //        https://stackoverflow.com/questions/58976630/swift-realm-completion-after-successfully-adding-item
     }
-
+    
 }

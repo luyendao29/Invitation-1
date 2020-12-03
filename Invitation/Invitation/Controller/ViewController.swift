@@ -40,7 +40,7 @@ enum LoaiKhach {
     case tat_ca
 }
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var searchView: UIView!
     
@@ -66,14 +66,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        isEnableHideKeyBoardWhenTouchInScreen = true
         registerCell()
         segmentedControl.selectedSegmentIndex = 0
-        getAll()
-        countDisplay = totalKhach.count
-        suggestKhachMoi = totalKhach
-        tableView.reloadData()
+        
         setShadowView(view: searchView)
         searchTextField.delegate = self
         setShadowButton(button: addButton)
@@ -82,6 +79,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         title = "Minh Dương ❦ Minh Huyền"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        getAll()
+        
+        filterKhachMoi()
+        tableView.reloadData()
     }
     
     func setShadowButton(button: UIButton) {
@@ -128,26 +133,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return suggestKhachMoi.count
-//        switch loaiKhach {
-//        case .tat_ca:
-//            return totalKhach.count
-//        case .da_moi:
-//            return listKM.count
-//        case .chua_moi:
-//            return listKCM.count
-//        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: KhachMoiCell.identifier(), for: indexPath) as! KhachMoiCell
-//        switch loaiKhach {
-//        case .tat_ca:
-//            cell.infoKhachMoi = totalKhach[indexPath.row]
-//        case .da_moi:
-//            cell.infoKhachMoi = listKM[indexPath.row]
-//        case .chua_moi:
-//            cell.infoKhachMoi = listKCM[indexPath.row]
-//        }
+        
         cell.infoKhachMoi = suggestKhachMoi[indexPath.row]
         cell.fillData()
         return cell
@@ -155,47 +145,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = Storyboard.Main.chiTietKhachMoiVC()
-//        switch loaiKhach {
-//        case .tat_ca:
-//            vc.detailKhach = totalKhach[indexPath.row]
-//        case .da_moi:
-//            vc.detailKhach = listKM[indexPath.row]
-//        case .chua_moi:
-//            vc.detailKhach = listKCM[indexPath.row]
-//        }
+        
         vc.detailKhach = suggestKhachMoi[indexPath.row]
         title = ""
         vc.title = "Thông tin chi tiết"
         vc.closureUpdate = { [weak self] user in
-            switch self?.loaiKhach {
-            case .tat_ca:
-                self?.totalKhach[indexPath.row] = user
-                
-                let realm = try! Realm()
-                //                let offers = realm.... look up your objects
-                let offers = realm.objects(ThongTinKhachMoiModel.self)
-                realm.beginWrite()
-                for offer in offers {
-                    if offer.id == user.id {
-                        offer.ten = user.ten
-                        offer.tuoi = user.tuoi
-                        offer.dia_chi = user.dia_chi
-                        offer.quan_he = user.quan_he
-                        
-                        offer.status = user.status
-                        offer.longitude = user.longitude
-                        offer.latitude = user.latitude
-                    }
+            self?.suggestKhachMoi[indexPath.row] = user
+            
+            let realm = try! Realm()
+            //                let offers = realm.... look up your objects
+            let offers = realm.objects(ThongTinKhachMoiModel.self)
+            realm.beginWrite()
+            for offer in offers {
+                if offer.id == user.id {
+                    offer.ten = user.ten
+                    offer.tuoi = user.tuoi
+                    offer.dia_chi = user.dia_chi
+                    offer.quan_he = user.quan_he
+                    
+                    offer.phone = user.phone
+                    offer.status = user.status
+                    offer.longitude = user.longitude
+                    offer.latitude = user.latitude
+                    offer.note = user.note
                 }
-                try! realm.commitWrite()
-                
-            case .da_moi:
-                self?.listKM[indexPath.row] = user
-            case .chua_moi:
-                self?.listKCM[indexPath.row] = user
-            case .none:
-                break
             }
+            try! realm.commitWrite()
             
             self?.tableView.reloadData()
         }
@@ -208,16 +183,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let book = suggestKhachMoi[indexPath.row]
                 // realm
                 let realm = try Realm()
-                
+
                 // edit book
                 try realm.write {
                     realm.delete(book)
 //                    suggestKhachMoi.remove(at: indexPath.row)
                     getAll()
+                    filterKhachMoi()
                 }
             } catch {
                 print("Lỗi Delete đối tượng")
             }
+            
+            
         }
     }
     
@@ -267,6 +245,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 getResultFilter(array: totalKhach)
             }
         }
+        countDisplay = suggestKhachMoi.count
         tableView.reloadData()
     }
     
@@ -289,6 +268,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //MARK: UITextField Delegate
     func textFieldDidChangeSelection(_ textField: UITextField) {
         filterKhachMoi()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 }
