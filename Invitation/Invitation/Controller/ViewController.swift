@@ -50,6 +50,7 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet var sideMenuView: MenuView!
     
     let realm = try! Realm()
     //    var totalKhach: Results<ThongTinKhachMoiModel>?
@@ -74,6 +75,13 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
         setShadowView(view: searchView)
         searchTextField.delegate = self
         setShadowButton(button: addButton)
+        
+        setMenuView()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(addTapped))
+        
+        let bar = UIBarButtonItem(image: #imageLiteral(resourceName: "icons8-silver_ring"), style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.leftBarButtonItem = bar
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -87,6 +95,29 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
         
         filterKhachMoi()
         tableView.reloadData()
+    }
+    
+    @objc func addTapped() {
+        sideMenuView.toggle()
+    }
+    
+    func setMenuView() {
+        view.addSubview(sideMenuView)
+        sideMenuView.fill(left: 0, top: 0, right: 0, bottom: -100)
+        sideMenuView.alpha = 0
+        sideMenuView.closureMenu = { [weak self] (data) in
+            if let isOpen = data.isOpen {
+                self?.navigationController?.navigationBar.isHidden = isOpen
+            }
+            if let action = data.action {
+                self?.selectActionMenu(action)
+            }
+        }
+        sideMenuView.reloadInputViews()
+    }
+    
+    func selectActionMenu(_ action: ActionMainMenuView) {
+    
     }
     
     func setShadowButton(button: UIButton) {
@@ -194,8 +225,6 @@ class ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSo
             } catch {
                 print("Lỗi Delete đối tượng")
             }
-            
-            
         }
     }
     

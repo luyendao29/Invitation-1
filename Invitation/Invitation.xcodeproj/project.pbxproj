@@ -50,6 +50,10 @@
 		CE402A232578B4360043EE29 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A222578B4360043EE29 /* Preferences.swift */; };
 		CE402A252578B46E0043EE29 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A242578B46E0043EE29 /* TextView.swift */; };
 		CE402A272578B65F0043EE29 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE402A262578B65F0043EE29 /* Int.swift */; };
+		CE9608AD2579D3CB00946FE8 /* ToggleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9608AC2579D3CB00946FE8 /* ToggleViewProtocol.swift */; };
+		CE9608AF2579D3FA00946FE8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9608AE2579D3FA00946FE8 /* MenuView.swift */; };
+		CE9608B32579D85D00946FE8 /* MenuLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9608B12579D85D00946FE8 /* MenuLeftCell.swift */; };
+		CE9608B42579D85D00946FE8 /* MenuLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9608B22579D85D00946FE8 /* MenuLeftCell.xib */; };
 		D0A4C56B15F028CA33281A68 /* Pods_Invitation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7236BD14B286FA56613E484 /* Pods_Invitation.framework */; };
 		D4588CD64A4D6E0D533602B3 /* Pods_Invitation_InvitationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81667D43A2D4B2698202D8AA /* Pods_Invitation_InvitationUITests.framework */; };
 		F4611A24B7506161DF1AA1CF /* Pods_InvitationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9359A2A07DA175129B80DE87 /* Pods_InvitationTests.framework */; };
@@ -131,6 +135,10 @@
 		CE402A222578B4360043EE29 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		CE402A242578B46E0043EE29 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		CE402A262578B65F0043EE29 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		CE9608AC2579D3CB00946FE8 /* ToggleViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleViewProtocol.swift; sourceTree = "<group>"; };
+		CE9608AE2579D3FA00946FE8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CE9608B12579D85D00946FE8 /* MenuLeftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLeftCell.swift; sourceTree = "<group>"; };
+		CE9608B22579D85D00946FE8 /* MenuLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuLeftCell.xib; sourceTree = "<group>"; };
 		D7236BD14B286FA56613E484 /* Pods_Invitation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Invitation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -316,6 +324,7 @@
 		CE402A0425787E110043EE29 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE9608AB2579D3AF00946FE8 /* LeftMenu */,
 				CE402A1A25788DC70043EE29 /* ChoseContactCell */,
 				CE402A0525787E110043EE29 /* KhachMoiCell */,
 			);
@@ -369,6 +378,25 @@
 				CE402A222578B4360043EE29 /* Preferences.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		CE9608AB2579D3AF00946FE8 /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CE9608B02579D84E00946FE8 /* MenuLeftCell */,
+				CE9608AC2579D3CB00946FE8 /* ToggleViewProtocol.swift */,
+				CE9608AE2579D3FA00946FE8 /* MenuView.swift */,
+			);
+			path = LeftMenu;
+			sourceTree = "<group>";
+		};
+		CE9608B02579D84E00946FE8 /* MenuLeftCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE9608B12579D85D00946FE8 /* MenuLeftCell.swift */,
+				CE9608B22579D85D00946FE8 /* MenuLeftCell.xib */,
+			);
+			path = MenuLeftCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4029FD25787DF90043EE29 /* BaseAlert.storyboard in Resources */,
+				CE9608B42579D85D00946FE8 /* MenuLeftCell.xib in Resources */,
 				CE4029B225787B830043EE29 /* LaunchScreen.storyboard in Resources */,
 				CE4029AF25787B830043EE29 /* Assets.xcassets in Resources */,
 				CE402A1E25788DDF0043EE29 /* ChoseContactCell.xib in Resources */,
@@ -651,6 +680,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9608AF2579D3FA00946FE8 /* MenuView.swift in Sources */,
+				CE9608B32579D85D00946FE8 /* MenuLeftCell.swift in Sources */,
 				CE4029A625787B820043EE29 /* AppDelegate.swift in Sources */,
 				CE402A0925787E110043EE29 /* KhachMoiCell.swift in Sources */,
 				CE402A232578B4360043EE29 /* Preferences.swift in Sources */,
@@ -675,6 +706,7 @@
 				CE22A4E82578D47F000DB278 /* UISwitch.swift in Sources */,
 				CE4029E925787DAC0043EE29 /* DPDUIView+Extension.swift in Sources */,
 				CE4029E825787DAC0043EE29 /* DPDConstants.swift in Sources */,
+				CE9608AD2579D3CB00946FE8 /* ToggleViewProtocol.swift in Sources */,
 				CE402A1425787E480043EE29 /* ChiTietKhachMoiVC.swift in Sources */,
 				CE4029EA25787DAC0043EE29 /* DropDown.swift in Sources */,
 				CE402A0125787DF90043EE29 /* AlertService.swift in Sources */,

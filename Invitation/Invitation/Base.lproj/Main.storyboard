@@ -111,10 +111,71 @@
                         <outlet property="searchTextField" destination="KtJ-uF-zKy" id="nHk-sE-FyG"/>
                         <outlet property="searchView" destination="mvi-uo-eYc" id="BIx-pG-8ph"/>
                         <outlet property="segmentedControl" destination="48Q-r7-zND" id="ED4-Ol-49o"/>
+                        <outlet property="sideMenuView" destination="c27-Bb-7xF" id="Y1P-vb-2go"/>
                         <outlet property="tableView" destination="Mvg-ca-kRl" id="TXA-CB-jNH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="c27-Bb-7xF" customClass="MenuView" customModule="Invitation" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="421" height="585"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhB-gN-HGW">
+                            <rect key="frame" x="0.0" y="44" width="421" height="507"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yDg-hl-HUM">
+                                <rect key="frame" x="0.0" y="0.0" width="421" height="507"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <blurEffect style="regular"/>
+                        </visualEffectView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="786-ci-ONe">
+                            <rect key="frame" x="0.0" y="44" width="421" height="507"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="tapCoverButton:" destination="c27-Bb-7xF" eventType="touchUpInside" id="zOo-aj-FKe"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNj-ix-QWX">
+                            <rect key="frame" x="0.0" y="0.0" width="357" height="551"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8qW-QS-BUP">
+                                    <rect key="frame" x="0.0" y="150" width="357" height="401"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.30213177200000002" green="0.55747121570000002" blue="0.7488151193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="8qW-QS-BUP" firstAttribute="leading" secondItem="KNj-ix-QWX" secondAttribute="leading" id="TWF-Ro-ymM"/>
+                                <constraint firstAttribute="trailing" secondItem="8qW-QS-BUP" secondAttribute="trailing" id="isa-f1-YDb"/>
+                                <constraint firstAttribute="bottom" secondItem="8qW-QS-BUP" secondAttribute="bottom" id="mIx-O1-dKQ"/>
+                                <constraint firstItem="8qW-QS-BUP" firstAttribute="top" secondItem="KNj-ix-QWX" secondAttribute="top" constant="150" id="tJb-QH-6v7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8Nc-No-779" firstAttribute="bottom" secondItem="bhB-gN-HGW" secondAttribute="bottom" id="0Xb-QC-By4"/>
+                        <constraint firstItem="8Nc-No-779" firstAttribute="trailing" secondItem="786-ci-ONe" secondAttribute="trailing" id="5Ke-Rh-56X"/>
+                        <constraint firstItem="786-ci-ONe" firstAttribute="top" secondItem="8Nc-No-779" secondAttribute="top" id="FDg-Za-Zgq"/>
+                        <constraint firstItem="8Nc-No-779" firstAttribute="trailing" secondItem="bhB-gN-HGW" secondAttribute="trailing" id="I8l-bJ-QG4"/>
+                        <constraint firstItem="bhB-gN-HGW" firstAttribute="leading" secondItem="8Nc-No-779" secondAttribute="leading" id="ap6-pe-rSt"/>
+                        <constraint firstItem="8Nc-No-779" firstAttribute="bottom" secondItem="KNj-ix-QWX" secondAttribute="bottom" id="kBn-xr-B4A"/>
+                        <constraint firstItem="786-ci-ONe" firstAttribute="leading" secondItem="8Nc-No-779" secondAttribute="leading" id="kd7-C6-ebY"/>
+                        <constraint firstItem="8Nc-No-779" firstAttribute="trailing" secondItem="KNj-ix-QWX" secondAttribute="trailing" constant="64" id="n93-io-5o7"/>
+                        <constraint firstItem="KNj-ix-QWX" firstAttribute="top" secondItem="c27-Bb-7xF" secondAttribute="top" id="rUS-bD-RD6"/>
+                        <constraint firstItem="8Nc-No-779" firstAttribute="bottom" secondItem="786-ci-ONe" secondAttribute="bottom" id="wBY-5W-7W4"/>
+                        <constraint firstItem="KNj-ix-QWX" firstAttribute="leading" secondItem="8Nc-No-779" secondAttribute="leading" id="wvD-KB-V9W"/>
+                        <constraint firstItem="bhB-gN-HGW" firstAttribute="top" secondItem="8Nc-No-779" secondAttribute="top" id="yjr-m2-eju"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="8Nc-No-779"/>
+                    <connections>
+                        <outlet property="controlConstraint" destination="wvD-KB-V9W" id="h7f-5n-O1A"/>
+                        <outlet property="corverButton" destination="786-ci-ONe" id="E4v-Gi-fxt"/>
+                        <outlet property="effectView" destination="bhB-gN-HGW" id="xRx-s7-zmi"/>
+                        <outlet property="menu" destination="KNj-ix-QWX" id="orS-Nh-3Ci"/>
+                        <outlet property="tableView" destination="8qW-QS-BUP" id="UJe-c6-VjD"/>
+                    </connections>
+                </view>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
