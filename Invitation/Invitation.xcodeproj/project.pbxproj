@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81FE45222579EA5800B0BBBE /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE45212579EA5800B0BBBE /* ViewController3.swift */; };
 		A6DB0421AD25F28A0817EF2B /* Pods_InvitationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5611745605F4AB2561048C /* Pods_InvitationTests.framework */; };
 		AD6DC31D767F21C0DE6CF5DF /* Pods_Invitation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5509F4F75ACA71CC2D556B86 /* Pods_Invitation.framework */; };
 		BB7A357EDFAB6D8102650A2F /* Pods_Invitation_InvitationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4460C36560B201A0A2A17068 /* Pods_Invitation_InvitationUITests.framework */; };
@@ -81,6 +82,7 @@
 		4460C36560B201A0A2A17068 /* Pods_Invitation_InvitationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Invitation_InvitationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5509F4F75ACA71CC2D556B86 /* Pods_Invitation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Invitation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B6D7FC957BFFCCED8B378D /* Pods-Invitation-InvitationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation-InvitationUITests.release.xcconfig"; path = "Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81FE45212579EA5800B0BBBE /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		8C5611745605F4AB2561048C /* Pods_InvitationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvitationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA9972A29D9B541E862F9FA /* Pods-Invitation-InvitationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invitation-InvitationUITests.debug.xcconfig"; path = "Target Support Files/Pods-Invitation-InvitationUITests/Pods-Invitation-InvitationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDD3307CF47F2068D6EF19A9 /* Pods-InvitationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvitationTests.debug.xcconfig"; path = "Target Support Files/Pods-InvitationTests/Pods-InvitationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				CE402A1025787E480043EE29 /* ChiTietKhachMoiVC.swift */,
 				CE402A1125787E480043EE29 /* ThemKhachMoiVC.swift */,
 				CE402A1625788A770043EE29 /* PhonebookVC.swift */,
+				81FE45212579EA5800B0BBBE /* ViewController3.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -697,6 +700,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9608AF2579D3FA00946FE8 /* MenuView.swift in Sources */,
+				81FE45222579EA5800B0BBBE /* ViewController3.swift in Sources */,
 				CE9608B32579D85D00946FE8 /* MenuLeftCell.swift in Sources */,
 				CE4029A625787B820043EE29 /* AppDelegate.swift in Sources */,
 				CE402A0925787E110043EE29 /* KhachMoiCell.swift in Sources */,
