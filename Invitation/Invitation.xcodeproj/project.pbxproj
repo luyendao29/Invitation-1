@@ -221,7 +221,7 @@
 				CE4029A525787B820043EE29 /* AppDelegate.swift */,
 				CE4029A725787B820043EE29 /* SceneDelegate.swift */,
 				CE402A1F2578B3CD0043EE29 /* Application */,
-				CE402A0D25787E480043EE29 /* Controller */,
+				CE9608B52579DE6200946FE8 /* Modules */,
 				CE402A0A25787E2C0043EE29 /* Model */,
 				CE402A0425787E110043EE29 /* View */,
 				CE4029F525787DF90043EE29 /* Base */,
@@ -397,6 +397,22 @@
 				CE9608B22579D85D00946FE8 /* MenuLeftCell.xib */,
 			);
 			path = MenuLeftCell;
+			sourceTree = "<group>";
+		};
+		CE9608B52579DE6200946FE8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE9608B62579DE6E00946FE8 /* Tutorial */,
+				CE402A0D25787E480043EE29 /* Controller */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE9608B62579DE6E00946FE8 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
